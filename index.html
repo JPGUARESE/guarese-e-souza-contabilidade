@@ -1,146 +1,157 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contabilidade Guarese & Souza</title>
-  <meta name="description" content="Contabilidade especializada para médicos, produtores rurais e empresas do agronegócio. Abertura de empresas, folha de pagamento, imposto de renda, planejamento financeiro e muito mais.">
+  <meta name="description" content="Contabilidade especializada para médicos, produtores rurais e empresas em geral. Abrimos sua empresa, cuidamos de tributos e garantimos suporte contábil completo.">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
+      background-color: #fff;
       color: #333;
     }
     header {
-      background-color: #f9f9f9;
+      background: url('banner-home.jpg') center/cover no-repeat;
+      color: white;
       text-align: center;
-      padding: 2rem 1rem;
-      border-bottom: 1px solid #ddd;
+      padding: 100px 20px;
     }
-    header img {
-      max-width: 150px;
-      border-radius: 8px;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-    h1 {
-      color: #b49b33;
-      margin-top: 1rem;
-      font-size: 2rem;
-      line-height: 1.4;
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .btn-whats {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-decoration: none;
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     h2 {
       color: #b49b33;
-      border-bottom: 1px solid #b49b33;
-      padding-bottom: .5rem;
-      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
     }
-    ul li::before {
-      content: "\2022";
-      color: #b49b33;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
+    .card {
+      flex: 1 1 300px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
     }
-    .contato {
-      background-color: #f1f1f1;
-      padding: 2rem;
-      text-align: center;
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
     }
-    .contato a {
-      color: #b49b33;
-      text-decoration: none;
-      font-weight: bold;
+    .segmentos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
-    .whatsapp {
-      margin-top: 1rem;
-    }
-    .whatsapp a.botao-whats {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #25d366;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+    .segmento {
+      flex: 1 1 300px;
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 6px;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #f9f9f9;
-      color: #777;
-      font-size: .9rem;
-      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin-top: 40px;
     }
     @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
+      .benefits {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.jpg" alt="Logo Guarese & Souza">
-    <h1>
-      Contabilidade<br>
-      <span style="font-weight: normal;">Guarese & Souza</span>
-    </h1>
-    <p>Excelência em soluções contábeis</p>
+    <h1>Contabilidade Guarese & Souza</h1>
+    <p>Contabilidade feita para médicos, produtores rurais e empresas em geral.</p>
+    <a href="https://wa.me/5563992435636" class="btn-whats" target="_blank">Fale conosco pelo WhatsApp</a>
   </header>
 
   <section>
-    <h2>Serviços Oferecidos</h2>
-    <ul>
-      <li>Abertura e legalização de empresas</li>
-      <li>Escrituração contábil e fiscal</li>
-      <li>Folha de pagamento e encargos sociais</li>
-      <li>Consultoria tributária e planejamento fiscal</li>
-      <li>Declaração de Imposto de Renda Pessoa Física e Jurídica</li>
-      <li>Planejamento financeiro e empresarial</li>
-      <li>Assessoria contábil e financeira para médicos e clínicas</li>
-      <li>Gestão contábil e fiscal para produtores rurais e agronegócios</li>
-      <li>Controle de custos, planejamento de safra e obrigações acessórias para o setor agrícola</li>
-      <li>Consultoria para enquadramento tributário no Simples Nacional, Lucro Presumido ou Real</li>
-    </ul>
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Abertura de Empresas</h3>
+        <p>Cuidamos de toda a legalização e documentação para sua empresa funcionar com segurança.</p>
+      </div>
+      <div class="card">
+        <h3>Contabilidade para Médicos</h3>
+        <p>Atendimento especializado para profissionais da saúde com foco em economia e organização.</p>
+      </div>
+      <div class="card">
+        <h3>Produtores Rurais</h3>
+        <p>Planejamento tributário e gestão contábil para o agronegócio com clareza e agilidade.</p>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>Sobre Nós</h2>
-    <p>A Guarese & Souza Contabilidade é uma empresa comprometida com a excelência no atendimento e a entrega de soluções contábeis modernas, seguras e personalizadas para seus clientes.</p>
-    <p>Atuamos de forma especializada com:</p>
-    <ul>
-      <li><strong>Profissionais da saúde</strong> — oferecendo assessoria contábil para médicos, clínicas e profissionais liberais, com foco em gestão de tributos, folha de pagamento, emissão de RPA, controle financeiro e regularização cadastral.</li>
-      <li><strong>Produtores Rurais e empresas do Agronegócio</strong> — atuando com escrituração de livro-caixa, apuração de impostos, gestão de notas fiscais de entrada e saída, planejamento tributário rural e suporte completo para obrigações federais, estaduais e ambientais.</li>
-      <li><strong>Empresas em geral</strong> — oferecendo contabilidade completa, suporte à tomada de decisões e estratégias fiscais seguras, conforme a legislação vigente.</li>
-    </ul>
+    <h2>Nossos Diferenciais</h2>
+    <div class="benefits">
+      <div>✔ Atendimento via WhatsApp até às 20h</div>
+      <div>✔ Suporte contábil especializado por segmento</div>
+      <div>✔ Sem burocracia para trocar de contador</div>
+      <div>✔ Agilidade, economia e confiança</div>
+    </div>
   </section>
 
-  <section class="contato">
-    <h2>Entre em Contato</h2>
-    <p>Email: <a href="mailto:guaresesouzacontabilidade@gmail.com">guaresesouzacontabilidade@gmail.com</a></p>
-    <p>Instagram:<br>
-      <a href="https://instagram.com/jpguarese" target="_blank">@jpguarese</a><br>
-      <a href="https://instagram.com/renan.bruno" target="_blank">@renan.bruno</a>
-    </p>
-    <p>Telefones:<br>(63) 99243-5636 | (63) 99220-8136</p>
-    <div class="whatsapp">
-      <a class="botao-whats" href="https://wa.me/5563992435636" target="_blank">Falar com João Pedro no WhatsApp</a>
-      <a class="botao-whats" href="https://wa.me/5563992208136" target="_blank">Falar com Renan Bruno no WhatsApp</a>
+  <section>
+    <h2>Segmentos Atendidos</h2>
+    <div class="segmentos">
+      <div class="segmento"><strong>📌 Médicos e Clínicas</strong><br>Gestão de tributos, folha, emissão de RPA e controle financeiro.</div>
+      <div class="segmento"><strong>📌 Produtores Rurais</strong><br>Livro-caixa, notas fiscais, impostos e planejamento rural.</div>
+      <div class="segmento"><strong>📌 Empresas em Geral</strong><br>Contabilidade completa, consultoria estratégica e suporte empresarial.</div>
     </div>
+  </section>
+
+  <section>
+    <h2>Sobre a Guarese & Souza</h2>
+    <p>Somos uma empresa contábil que preza pela agilidade, clareza e excelência. Nosso compromisso é oferecer soluções sob medida para profissionais e negócios que exigem atenção especial, segurança e economia.</p>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:guaresesouzacontabilidade@gmail.com">guaresesouzacontabilidade@gmail.com</a><br>
+    WhatsApp: <a href="https://wa.me/5563992435636" target="_blank">(63) 99243-5636</a><br>
+    Instagram: <a href="https://instagram.com/jpguarese" target="_blank">@jpguarese</a></p>
   </section>
 
   <footer>
     &copy; 2025 Contabilidade Guarese & Souza. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
